@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+}
+
+#sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    height: 100vh;
+    background: #f8f9fa;
+    padding-top: 20px;
+    border-right: 2px solid #00BFA6;
+}
+
+#sidebar .components li {
+    padding: 15px;
+    text-align: center;
+}
+
+#sidebar .components li.active a {
+    background-color: #00BFA6;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+#sidebar .components li a {
+    color: #333;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#content {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-dark {
+    background-color: #001F3F;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.navbar-dark .navbar-brand {
+    color: white;
+    font-size: 24px;
+}
