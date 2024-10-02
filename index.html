@@ -76,7 +76,9 @@
     <nav id="sidebar" class="bg-light">
       <ul class="list-unstyled components">
         <li class="active">
-          <a href="#"><img src="assets/img/Group 10.png" alt=""></a>
+          <div>
+            <a href="#"><img src="assets/img/Group 10.png" alt=""></a>
+          </div>
         </li>
         <li>
           <a href="#"><img src="assets/img/user.png" alt=""></a>
@@ -105,14 +107,14 @@
 
 
       <!-- Main Content -->
-      <div class="container-fluid p-4">
+      <div class="container-fluid p-5">
         <section class="patient-schedule">
           <div class="row">
             <div class="col-md-7">
               <h2 class="text-center">On-Site Patient</h2>
               <p class="text-center"> Patients listed for on-site consultations and check-ups as per the daily
                 appointments.</p>
-              <div class="schedule shadow">
+              <div class="schedule ">
                 <div class="month-title">SEPTEMBER-2024</div>
                 <div class="days">
                   <div class="day">SUN<br />21</div>
@@ -124,26 +126,60 @@
                   <div class="day">SAT<br />27</div>
                 </div>
                 <div class="events">
-                  <div class="day event event-1 checkup">
-                    <div class="event-title">CHECK UP</div>
-                    <div class="event-patients">ROUTINE-15 PATIENTS</div>
+                  <div class="rounded event event-1 checkup">
+                    <div>
+                      <div class="event-title">CHECK UP</div>
+                      <div class="event-patients">ROUTINE-15 PATIENTS</div>
+
+                    </div>
+                    <div class="avater">
+                      <img src="assets/img/Ellipse 2 (1).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2 (2).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2.png" alt="Patient checkup 1" class="image">
+                    </div>
                   </div>
-                  <div class="day event event-2 surgery">
-                    <div class="event-title">SURGERY</div>
-                    <div class="event-patients">ROUTINE-15 PATIENTS</div>
+                  <div class="rounded event event-2 checkup">
+                    <div>
+                      <div class="event-title">CHECK UP</div>
+                      <div class="event-patients">ROUTINE-15 PATIENTS</div>
+
+                    </div>
+                    <div class="avater">
+                      <img src="assets/img/Ellipse 2 (1).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2 (2).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2.png" alt="Patient checkup 1" class="image">
+                    </div>
                   </div>
                 </div>
                 <div class="events">
-                  <div class="day event event-3 consultant">
-                    <div class="event-title">CONSULTANT</div>
-                    <div class="event-patients">ROUTINE-15 PATIENTS</div>
+                  <div class="rounded event event-3 checkup">
+                    <div class="avater">
+                      <img src="assets/img/Ellipse 2 (1).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2 (2).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2.png" alt="Patient checkup 1" class="image">
+                    </div>
+                    <div>
+                      <div class="event-title">CHECK UP</div>
+                      <div class="event-patients">ROUTINE-15 PATIENTS</div>
+
+                    </div>
+
                   </div>
-                  <div class="day event event-4 checkup">
-                    <div class="event-title">CHECK UP</div>
-                    <div class="event-patients">ROUTINE-15 PATIENTS</div>
+                  <div class="rounded event event-4 checkup">
+                    <div class="avater">
+                      <img src="assets/img/Ellipse 2 (1).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2 (2).png" alt="Patient checkup 1" class="image">
+                      <img src="assets/img/Ellipse 2.png" alt="Patient checkup 1" class="image">
+                    </div>
+                    <div>
+                      <div class="event-title">CHECK UP</div>
+                      <div class="event-patients">ROUTINE-15 PATIENTS</div>
+
+                    </div>
+
                   </div>
                 </div>
-                <div class="events">
+                <!-- <div class="events">
                   <div class="day event event-5 surgery">
                     <div class="event-title">SURGERY</div>
                     <div class="event-patients">ROUTINE-15 PATIENTS</div>
@@ -159,36 +195,36 @@
                     <div class="event-title">CONSULTANT</div>
                     <div class="event-patients">ROUTINE-15 PATIENTS</div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-md-5">
               <div class="row">
                 <div class="col-md-4">
-                  		<canvas id="myChart"></canvas>
+                  <canvas id="myChart"></canvas>
                 </div>
                 <div class="col-md-8">
-                  	<div class="calendar-container">
-                  	  <div class="calendar-header">
-                  	    <button id="prev-month">&lt;</button>
-                  	    <div id="month-year"></div>
-                  	    <button id="next-month">&gt;</button>
-                  	  </div>
-                  	  <table class="calendar">
-                  	    <thead>
-                  	      <tr>
-                  	        <th>Sun</th>
-                  	        <th>Mon</th>
-                  	        <th>Tue</th>
-                  	        <th>Wed</th>
-                  	        <th>Thu</th>
-                  	        <th>Fri</th>
-                  	        <th>Sat</th>
-                  	      </tr>
-                  	    </thead>
-                  	    <tbody id="calendar-body"></tbody>
-                  	  </table>
-                  	</div>
+                  <div class="calendar-container">
+                    <div class="calendar-header">
+                      <button id="prev-month">&lt;</button>
+                      <div id="month-year"></div>
+                      <button id="next-month">&gt;</button>
+                    </div>
+                    <table class="calendar">
+                      <thead>
+                        <tr>
+                          <th>Sun</th>
+                          <th>Mon</th>
+                          <th>Tue</th>
+                          <th>Wed</th>
+                          <th>Thu</th>
+                          <th>Fri</th>
+                          <th>Sat</th>
+                        </tr>
+                      </thead>
+                      <tbody id="calendar-body"></tbody>
+                    </table>
+                  </div>
                 </div>
 
               </div>
@@ -205,131 +241,131 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  // Get the canvas element
-  const ctx = document.getElementById('myChart').getContext('2d');
+  <script>
+    // Get the canvas element
+    const ctx = document.getElementById('myChart').getContext('2d');
 
-  // Create the Doughnut chart
-  const myDoughnutChart = new Chart(ctx, {
-    type: 'doughnut', // Type of chart: doughnut (for pie-like charts)
-    data: {
-      // Labels for the chart
-      datasets: [{
-        label: 'Pet Distribution',
-        data: [40, 25], // Data values for each section
-        backgroundColor: [
-          '#FF6384', // Color for Cats
-          '#36A2EB',
-        ],
-        borderColor: '#fff', // Border color around each section
-        borderWidth: 2,
-      }, ],
-    },
-    options: {
-      responsive: true, // Make it responsive
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: 'top', // Legend position (top, left, right, bottom)
-        },
-        tooltip: {
-          enabled: true, // Show tooltips on hover
+    // Create the Doughnut chart
+    const myDoughnutChart = new Chart(ctx, {
+      type: 'doughnut', // Type of chart: doughnut (for pie-like charts)
+      data: {
+        // Labels for the chart
+        datasets: [{
+          label: 'Pet Distribution',
+          data: [40, 25], // Data values for each section
+          backgroundColor: [
+            '#FF6384', // Color for Cats
+            '#36A2EB',
+          ],
+          borderColor: '#fff', // Border color around each section
+          borderWidth: 2,
+        }, ],
+      },
+      options: {
+        responsive: true, // Make it responsive
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'top', // Legend position (top, left, right, bottom)
+          },
+          tooltip: {
+            enabled: true, // Show tooltips on hover
+          },
         },
       },
-    },
-  });
-</script>
-	<script>
-	  const monthNames = [
-	    'January',
-	    'February',
-	    'March',
-	    'April',
-	    'May',
-	    'June',
-	    'July',
-	    'August',
-	    'September',
-	    'October',
-	    'November',
-	    'December',
-	  ];
+    });
+  </script>
+  <script>
+    const monthNames = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
 
-	  let currentDate = new Date();
-	  let currentMonth = currentDate.getMonth();
-	  let currentYear = currentDate.getFullYear();
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
 
-	  const calendarBody = document.getElementById('calendar-body');
-	  const monthYearDisplay = document.getElementById('month-year');
-	  const prevMonthBtn = document.getElementById('prev-month');
-	  const nextMonthBtn = document.getElementById('next-month');
+    const calendarBody = document.getElementById('calendar-body');
+    const monthYearDisplay = document.getElementById('month-year');
+    const prevMonthBtn = document.getElementById('prev-month');
+    const nextMonthBtn = document.getElementById('next-month');
 
-	  function generateCalendar(month, year) {
-	    // Clear previous calendar body
-	    calendarBody.innerHTML = '';
+    function generateCalendar(month, year) {
+      // Clear previous calendar body
+      calendarBody.innerHTML = '';
 
-	    // Get the first day of the month
-	    const firstDay = new Date(year, month, 1).getDay();
-	    const daysInMonth = new Date(year, month + 1, 0).getDate();
+      // Get the first day of the month
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-	    // Display the month and year
-	    monthYearDisplay.textContent = `${monthNames[month]} ${year}`;
+      // Display the month and year
+      monthYearDisplay.textContent = `${monthNames[month]} ${year}`;
 
-	    // Create a new row for the calendar
-	    let date = 1;
-	    for (let i = 0; i < 6; i++) {
-	      let row = document.createElement('tr');
+      // Create a new row for the calendar
+      let date = 1;
+      for (let i = 0; i < 6; i++) {
+        let row = document.createElement('tr');
 
-	      // Create 7 days for each week
-	      for (let j = 0; j < 7; j++) {
-	        let cell = document.createElement('td');
+        // Create 7 days for each week
+        for (let j = 0; j < 7; j++) {
+          let cell = document.createElement('td');
 
-	        if (i === 0 && j < firstDay) {
-	          cell.textContent = '';
-	        } else if (date > daysInMonth) {
-	          break;
-	        } else {
-	          cell.textContent = date;
+          if (i === 0 && j < firstDay) {
+            cell.textContent = '';
+          } else if (date > daysInMonth) {
+            break;
+          } else {
+            cell.textContent = date;
 
-	          // Highlight the current day
-	          if (
-	            date === currentDate.getDate() &&
-	            month === currentDate.getMonth() &&
-	            year === currentDate.getFullYear()
-	          ) {
-	            cell.classList.add('today');
-	          }
+            // Highlight the current day
+            if (
+              date === currentDate.getDate() &&
+              month === currentDate.getMonth() &&
+              year === currentDate.getFullYear()
+            ) {
+              cell.classList.add('today');
+            }
 
-	          date++;
-	        }
-	        row.appendChild(cell);
-	      }
+            date++;
+          }
+          row.appendChild(cell);
+        }
 
-	      calendarBody.appendChild(row);
-	    }
-	  }
+        calendarBody.appendChild(row);
+      }
+    }
 
-	  prevMonthBtn.addEventListener('click', () => {
-	    currentMonth--;
-	    if (currentMonth < 0) {
-	      currentMonth = 11;
-	      currentYear--;
-	    }
-	    generateCalendar(currentMonth, currentYear);
-	  });
+    prevMonthBtn.addEventListener('click', () => {
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      generateCalendar(currentMonth, currentYear);
+    });
 
-	  nextMonthBtn.addEventListener('click', () => {
-	    currentMonth++;
-	    if (currentMonth > 11) {
-	      currentMonth = 0;
-	      currentYear++;
-	    }
-	    generateCalendar(currentMonth, currentYear);
-	  });
+    nextMonthBtn.addEventListener('click', () => {
+      currentMonth++;
+      if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      generateCalendar(currentMonth, currentYear);
+    });
 
-	  // Initialize the calendar on page load
-	  generateCalendar(currentMonth, currentYear);
-	</script>
+    // Initialize the calendar on page load
+    generateCalendar(currentMonth, currentYear);
+  </script>
 
 </body>
 

@@ -50,7 +50,6 @@ body {
 
 .event {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
@@ -97,16 +96,30 @@ body {
 .event-title {
   font-size: 1rem;
   margin-bottom: 5px;
+  color: #000;
 }
 
 .event-patients {
-  font-size: 0.7rem;
+ font-size: 10px;
+ font-weight: 100;
+}
+
+.events .avater{
+  display: flex;
+}
+
+.events .avater img{
+    border-radius: 50%;
+    width: 50px; /* adjust as needed */
+    height: 50px; /* adjust as needed */
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* main claender */
 
 .patient-schedule .calendar-container {
-  width: 300px;
+ 
   background-color: white;
   padding: 20px;
   border-radius: 10px;
