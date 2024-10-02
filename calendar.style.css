@@ -1,0 +1,163 @@
+/* 
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f4f8;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+} */
+
+.schedule {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  /* max-width: 1000px; */
+  background-color: #a8bffe26;
+}
+.patient-schedule h2 {
+  color: #0fa8c9;
+  font-weight: 700;
+}
+
+.month-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  text-align: center;
+
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.event-1,
+.event-5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.event-2,
+.event-6 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+.event-3 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.event-4 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+}
+.event-7 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.checkup {
+  background-color: #af7434;
+}
+
+.surgery {
+  background-color: #34a0af;
+}
+
+.consultant {
+  background-color: #b434af;
+}
+
+.event-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.event-patients {
+  font-size: 0.7rem;
+}
+
+/* main claender */
+
+.patient-schedule .calendar-container {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-schedule .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.patient-schedule #month-year {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.patient-schedule button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.patient-schedule button:hover {
+  background-color: #0056b3;
+}
+
+.patient-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patient-schedule th {
+  color: #666;
+  font-weight: bold;
+}
+
+.patient-schedule td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.patient-schedule td.today {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+}
