@@ -1,11 +1,12 @@
 .schedule {
 	padding: 20px;
-	width: 90%;
+	width: 100%;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	box-sizing: border-box;
 	background: rgba(168, 191, 254, 0.15);
 	border: 1px solid #ffffff;
-	box-shadow: 25px 25px 100px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 13px 5px 30px 10px rgba(0, 0, 0, 0.25);
+	margin: auto;
 	border-radius: 20px;
 }
 .patient-schedule h2 {
@@ -126,7 +127,8 @@
 	box-sizing: border-box;
 	background: #ffffff;
 	border: 1px solid rgba(49, 102, 252, 0.43);
-	border-radius: 30px;
+	border-radius: 10px;
+	box-shadow: 15px 15px 40px 1px rgba(0, 0, 0, 0.25);
 }
 
 .patient-schedule .calendar-header {
@@ -161,9 +163,9 @@
 }
 
 .patient-schedule td {
-	width: 40px;
-	min-height: 40px;
-	height: 40px;
+	width: 26px;
+	min-height:26px;
+	height: 26px;
 	text-align: center;
 	cursor: pointer;
 	/* border: 1px solid #ddd; */
@@ -185,7 +187,7 @@
 	background: #ffffff;
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.25);
 	border: 1px solid rgba(49, 102, 252, 0.43);
-	border-radius: 30px;
+	border-radius: 10px;
 	overflow: hidden;
 }
 .chart-card .card-header {
@@ -195,8 +197,8 @@
 	color: #009688;
 	font-weight: 700;
 }
-.chart-container {
-	/* margin-top: -50px; */
+.chart-container canvas{
+
 }
 .chart-box-1,
 .chart-box-2 {
