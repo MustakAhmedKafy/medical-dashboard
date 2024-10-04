@@ -65,6 +65,8 @@ body {
   font-size: 18px;
 }
 
+/* main nav end */
+
 #sidebar {
   min-width: 100px;
   max-width: 100px;
@@ -179,13 +181,15 @@ body {
   width: 35px;
 }
 
+/* sidebar end */
+
 #content {
   width: 100%;
   flex-grow: 1;
   padding-left: 100px;
   background-color: #fff;
   min-height: 100vh;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .main-nav .navbar-nav .nav-link {
@@ -693,4 +697,208 @@ body {
 }
 
 @media (min-width: 992px) {
+}
+
+/* small laptop */
+@media (min-width: 992px) and (max-width: 1400px) {
+  .doctor-area .avater-bg-img {
+    width: 55%;
+  }
+  .doctor-area .doctor-img {
+    top: -90px;
+  }
+  .doctor-area .doctor-img img {
+    width: 15vw;
+  }
+  .doctor-area .porfile-card {
+    width: 13vw;
+  }
+  .doctor-area .porfile-card .btn {
+    font-size: 10px;
+    padding: 5px 10px !important;
+  }
+  .doctor-area .porfile-card .description {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .doctor-area .porfile-card {
+    padding: 10px !important;
+  }
+  .doctor-area .porfile-card h4 {
+    font-size: 16px;
+  }
+  .doctor-area .doctor-mobile .card img {
+    width: 25px !important;
+  }
+  .doctor-area .doctor-mobile .card small {
+    font-size: 10px;
+  }
+
+  .doctor-area .doctor-mobile .card h5 {
+    font-size: 10px;
+  }
+  .doctor-area .doctor-mobile .card {
+    height: 100px;
+    width: 100px;
+    right: 37%;
+    bottom: -60px;
+  }
+  .doctor-area .patient-card .card img {
+    width: 25px !important;
+  }
+  .doctor-area .patient-card .card small {
+    font-size: 10px;
+  }
+
+  .doctor-area .patient-card .card h5 {
+    font-size: 10px;
+  }
+  .doctor-area .patient-card .card {
+    height: 100px;
+    width: 100px;
+    right: 14%;
+    bottom: 55px;
+  }
+  .doctor-area .consultation .card img {
+    width: 25px !important;
+  }
+  .doctor-area .consultation .card small {
+    font-size: 10px;
+  }
+
+  .doctor-area .consultation .card h5 {
+    font-size: 10px;
+  }
+  .doctor-area .consultation .card {
+    height: 100px;
+    width: 100px;
+    right: 18%;
+    top: -10px;
+  }
+  .doctor-area .doctor-injection {
+    position: absolute;
+    left: 0px;
+    bottom: -165px;
+    width: 35% !important;
+  }
+  .premium-feature .card-title {
+    font-size: 14px;
+  }
+  .premium-feature .card-body {
+    padding: 1rem;
+  }
+  .premium-feature .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .premium-feature .card-icon {
+    padding: 6px;
+  }
+  .premium-feature .card-text {
+    font-size: 12px;
+    margin: 0 !important;
+    margin-top: 6px !important;
+  }
+
+  .premium-feature .card .btn {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .premium-feature .card {
+    min-height: 170px;
+  }
+  .premium-feature .title {
+    font-size: 22px;
+  }
+  .premium-feature .sub-title {
+    font-size: 12px;
+  }
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  .section-header .sub-title {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .patient-schedule .month-title {
+    font-size: 1.1rem;
+  }
+  .patient-schedule .day {
+    font-size: 0.7rem;
+  }
+  .patient-schedule .event-title {
+    font-size: 10px;
+  }
+  .patient-schedule .event-patients {
+    font-size: 8px;
+  }
+  .events .avater img {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+  }
+  .event-3 .avater img,
+  .event-4 .avater img {
+    margin-left: 0;
+    margin-right: -15px;
+  }
+  .patient-schedule .event {
+    height: 55px;
+  }
+  .patient-schedule th{
+    font-size: 12px;
+  }
+
+  .patient-schedule td {
+    font-size: 12px;
+        width: 20px;
+    min-height: 20px;
+    height: 20px;
+  }
+   .patient-schedule  .calendar-footer{
+    margin-top: 10px !important;
+   }
+    .patient-schedule  .calendar-footer p{
+      font-size: 12px;
+    }
+    .patient-schedule .calendar-header{
+      margin-bottom: 10px;
+    }
+    .patient-schedule .chart-card-label{
+      font-size: 18px;
+    }
+    .patient-schedule .calendar-container{
+      padding: 8px 15px;
+    }
+    .patient-schedule .chart-card .card-header{
+      font-size: 1.1rem;
+    }
+    .patient-schedule #month-year{
+      font-size: 1.1rem;
+    }
+    .patient-schedule .canvas-lebel p{ 
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+     .patient-schedule .canvas-lebel .d-flex{
+      align-items: center;
+      margin-bottom: 8px;
+     }
+    .chart-box-1, .chart-box-2{
+      height: 13px;
+      width: 17px;
+    }
+    .patient-schedule canvas{
+      height: 200px !important;
+    }
+    .schedule{
+      padding: 10px 15px;
+    }
+    .schedule .month-title{
+      margin-bottom: 12px;
+    }
+    .schedule .event{
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
 }
